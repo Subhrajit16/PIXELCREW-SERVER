@@ -10,7 +10,7 @@ require('./config/authorization');
 
 
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:3001'],
+    origin: ['http://localhost:5173', 'https://pixelcrew-client.vercel.app'],
     credentials: true
 }));
 
@@ -44,6 +44,7 @@ app.use('/api/posts', PostRoute);
 app.use('/api/product', ProductRoute);
 app.use('/api/booking',BookingRoute);
 app.use('/api/notified',NotificationRoute);
+
 
 
 app.get('/', (req, res) => {

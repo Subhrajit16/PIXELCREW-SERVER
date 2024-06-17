@@ -10,7 +10,7 @@ require('./config/authorization');
 
 
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://pixelcrew-client.vercel.app'],
+    origin: ['http://localhost:3000', 'https://pixelcrew-web.vercel.app'],
     credentials: true
 }));
 

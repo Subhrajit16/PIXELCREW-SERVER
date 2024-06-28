@@ -18,7 +18,8 @@ const uploadMiddleware = multer({
 }).fields([
     { name: 'avatar', maxCount: 1 },
     { name: 'thumbnail', maxCount: 1 },
-    { name: 'images', maxCount: 5 }
+    { name: 'images', maxCount: 5 },
+    { name: 'img', maxCount: 1 },
 ]);
 
 module.exports = uploadMiddleware;
